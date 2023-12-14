@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Document</title>
+    <style>
+        #main-container{
+            border: solid 1px gray; 
+            background-color: rgb(233, 233, 195); 
+            margin: 20px; 
+            padding: 20px; 
+            border-radius: 5px;
+        }
+
+        .first-form{
+            width: 60%;
+        }
+
+        .first-form-label{
+            margin: 15px; 
+            color: rgb(2, 2, 46); 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+            font-weight: 700; 
+            font-size: 20px;
+        }
+
+        .first-form-input{
+            height: 15px;
+            width: 100%; 
+            padding: 15px; 
+            margin: 15px;
+            border: none; 
+            color: rgb(2, 2, 46); 
+            font-size: 20px; 
+            font-weight: 700; 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+            border-radius: 5px; 
+            background-color: rgb(183, 183, 201);
+        }
+
+        .first-input-submit{
+            font-size: 30px; 
+            background-color: darkgray; 
+            text-decoration-color: whitesmoke;
+        }
+
+        #second-container{
+            border: solid 1px darkkhaki; 
+            margin: 20px; padding: 20px;  
+            border-radius: 5px; 
+            background-color: green;
+        }
+
+        .second-form{
+            width: 40%;
+        }
+
+        .second-form-label{
+            font-size: large; 
+            font-weight: 700; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .second-form-input{
+            width: 150%; 
+            border: none; height: 15px; 
+            padding: 15px; 
+            margin: 15px; 
+            color: black; 
+            font-size: 20px; 
+            font-weight: 700px; 
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+            border-radius: 7px; 
+            background-color: rgb(143, 90, 194);
+        }
+
+        .second-form-submit{
+            font-size: 20px; 
+            padding: 15px; 
+            border-radius: 10%; 
+            background-color:rgba(255, 105, 180, 0.815); 
+            border-color: peachpuff; 
+            text-decoration: none;
+        }
+
+        .third_form{
+            border: solid 1px goldenrod; 
+            margin: 30px; 
+            border-radius: 10px; 
+            background-color:rgb(94, 92, 92);
+        }
+
+        .third_form_label{
+            font-size: 20px; 
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif; 
+            color: white;
+        }
+
+        .third-form-first-input{
+            background-color: rgb(36, 36, 190); 
+            border-radius: 5px;
+        }
+
+        .third-form-second-input{
+            width: 235px; 
+            border: solid 1px; 
+            height: 19px; 
+            padding: 15px; 
+            border-color: cadetblue; 
+            font-size: 20px; 
+            font-weight: 700; 
+            font-family: Arial, Helvetica, sans-serif; 
+            border-radius: 7px; 
+            background-color: rgba(3, 3, 73, 0.74); 
+            color: whitesmoke;
+        }
+
+        .third-form-second-input-one{
+            width: 235px; 
+            border: solid 1px cornflowerblue; 
+            height: 25px; 
+            padding: 15px; 
+            border-radius: 7px; 
+            font-size: 20px; 
+            font-weight: 500; 
+            font-family:Verdana, Geneva, Tahoma, sans-serif ; 
+            border-radius: 8px;  
+            background-color:rgb(99, 187, 216);
+        } 
+
+        .third-form-second-input-submit{
+            width: 550px; 
+            border: solid 1px; 
+            height: 90px; 
+            padding: 15px; 
+            border-radius: 7px; 
+            font-size: 20px; 
+            font-weight: 500; 
+            font-family:Verdana, Tahoma, sans-serif ; 
+            border-radius: 7px; 
+            background-color: rgba(3, 3, 73, 0.74); 
+            border-color: cadetblue;
+        }
+
+        .third-form-third-input{
+            background-color: rgb(36, 36, 190); 
+            border-radius: 5px;
+        }
+
+        .third-form-third-input-one{
+            font-size: 20px;
+        }
+
+        .third-form-third-input-submit{
+            font-size: 20px; 
+            padding: 15px; 
+            border-radius: 10%; 
+            background-color:rgb(99, 187, 216); 
+            border-color: cornflowerblue; 
+            text-decoration: none;
+        }
+
+        #last-container{
+            border: solid 1px lightskyblue; 
+            margin: 35px; 
+            padding: 20px; 
+            background-color: rgba(60, 166, 231, 0.918);
+        }
+
+        .last-form-1{
+            color: aliceblue;
+        }
+
+        .last-form-two-i{
+            color: rgb(185, 221, 245);
+        }
+
+        .last-form-two-ii{
+            color: aliceblue;
+        }
+
+        .last-form-input{
+            width: 70%; 
+            border: solid 1px lightblue;
+            background-color:  aliceblue; 
+            height: 20px; 
+            padding: 20px; 
+            font-size: 15px; 
+            font-weight: 300; 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .last-form-input-container{
+            color: aliceblue;
+        }
+
+        .last_form_contact{
+            font-size: 20px; 
+            height: 5px; 
+            padding: 10px; 
+            border-radius: 10%; 
+            background-color: orangered; 
+            border-color: blue; 
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+
+        <form class="first-form">
+            
+            <label class="first-form-label" for="first-name">First Name:</label><br>
+
+            <input class="first-form-input" name="first-name" placeholder="First Name">
+
+            <br><br>
+            <label class="first-form-label" for="last-name">Last Name:</label><br>
+
+            <input class="first-form-input" type="text" name="last-name" placeholder="Last Name">
+
+            <br><br>
+            <label class="first-form-label" for="Email">Email:</label><br>
+
+            <input class="first-form-input" name="email" placeholder="Email" >
+
+            <br><br>
+            <label class="first-form-label" for="Password">Password:</label><br>
+            
+            <input class="first-form-input" placeholder="Password">
+
+            <br><br>
+            <input class="first-input-submit" type="submit">
+        </form>
+    </div>
+
+    <br><br><br><br>
+    <div id="second-container">
+        <form class="second-form">
+            <label class="second-form-label">First Name:</label><br>
+
+            <input class="second-form-input" name="first-name" placeholder="First Name">
+
+            <br><br>
+            <label class="second-form-label">Last Name:</label>
+
+            <br>
+            <input class="second-form-input" name="last-name" placeholder="Last Name" >
+
+            <br><br>
+            <label class="second-form-label">Email:</label>
+
+            <br>
+            <input class="second-form-input" name="email" placeholder="Email">
+
+            <br><br>
+            <label class="second-form-label">Password:</label>
+
+            <br>
+            <input class="second-form-input" name="password" placeholder="Password">
+
+            <br><br><br>
+            <a href="../forms_content/formhtml.html" input class="second-form-submit" type="Submit">Submit</a>
+        </form>
+    </div>
+
+    <br><br><br><br>
+    <div>
+        <form class="third_form">
+            <h2>Contact Us.</h2><br><br>
+
+            <input class="third-form-first-input" type="radio" name="Inquire About B">
+            <label for="Inquire About 
+            B" style="font-size: 20px;">Inquire About</label> 
+
+            <br><br>
+            <input class="third-form-first-input" type="radio" name="Just Say "Hi">
+            <label for="Just Say "hi"" style="font-size: 20px;">Just Say "Hi"</label>
+
+            <br><br>
+            <input class="third-form-first-input" type="radio" name="Submit A Resume">
+            <label for="Submit A Resume" style="font-size: 20px;">Submit A Resume</label>
+
+            <aside>
+                <center>
+                    <table>
+                        <tr>
+                            <td>
+                                <div>
+                                    <label class="third_form_label">Full Name </label><br><br>
+
+                                    <input class="third-form-second-input" type="text" name="Full Name">
+                                </div>
+                            </td>
+                            
+                            <td>
+                                <div>
+                                    <label class="third_form_label">Title</label><br><br>
+
+                                    <input class="third-form-second-input" type="text" name="Title">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div>
+                                    <div><br></div>
+                                </div>
+                                <div>
+                                    <label class="third_form_label" >Company</label><br><br>
+
+                                    <input class="third-form-second-input" type="text" name="Company">
+                                </div>
+                            </td>
+
+                           
+                           <td>
+                               <div>
+                                   <div><br></div>
+                               </div>
+
+                               <div>
+                                   <label class="third_form_label">How Did You Hear About Us</label><br><br>
+
+                                   <input class="third-form-second-input" type="text" name="how did you hear about us">
+                               </div>
+                           </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div>
+                                    <div><br></div>
+                                </div>
+
+                                <div>
+                                    <label class="third_form_label" >Email</label><br><br>
+
+                                    <input class="third-form-second-input" type="email" name="email">
+                                </div>
+                            </td>
+
+                            <td>
+                                <div>
+                                    <div><br></div>
+                                </div>
+
+                                <div>
+                                    <label class="third_form_label">Phone</label><br><br>
+
+                                    <input class="third-form-second-input"  type="phone" name="phone">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div>
+                                    <div><br></div>
+                                </div>
+
+                                <div>
+                                    <div><p style="color: white;">Additional Details</p></div>
+                                </div>
+
+                                <div>
+                                    <label class="third_form_label" >Full Name</label><br><br>
+
+                                    <input class="third-form-second-input"  type="full name" name="full name" >
+                                </div>
+                            </td>
+
+                            <td>
+                                <div>
+                                    <div><p><br><br></p></div>
+                                </div>
+
+                                <div>
+                                    <label class="third_form_label">Desired Position</label><br><br>
+
+                                    <input class="third-form-second-input"  type="desired position" name="desired position">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div>
+                                    <div><br></div>
+                                </div>
+
+                                <div>
+                                    <label class="third_form_label">Email</label><br><br>
+
+                                    <input class="third-form-second-input"  type="email" name="email">
+                                </div>
+                            </td>
+
+                            <td>
+                                <div>
+                                    <div><br></div>
+                                </div>
+                                <div>
+                                    <label class="third_form_label">Phone</label><br><br>
+
+
+                                    <input class="third-form-second-input"  type="phone" name="phone">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div>
+                                    <div><br></div>
+                                </div>
+                                <div>
+                                    <label class="third_form_label">Your Website(url)</label><br><br>
+
+                                    <input class="third-form-second-input"  type="Your Website(url)" name="Your Website(url)">
+                                </div>
+                            </td>
+
+                            <td>
+                                <div>
+                                    <div><br></div>
+                                </div>
+                                <div>
+                                    <label class="third_form_label">Upload Resume</label><br><br>
+
+                                    <input class="third-form-second-input-one"  type="file" name="browse">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <div>
+                            <div>
+                                <div><br></div>
+                            </div>
+
+                            <div>
+                                <input class="third-form-second-input-submit" type="submit" name="Resume">
+                            </div>
+                        </div>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <input type="radio" class="third-form-third-input" name="Inquire About B" > <label for="chesk to stay in the know of treats and " class="third-form-third-input-one">Check to stay in to know of treats and images</label>
+
+                        <a href="../ugoCollection's/Ugo'sCollectionHomePage.html" class="third-form-third-input-submit" input type="Submit">Suscribe</a>
+                    </p>
+                </center>
+            </aside>
+        </form>
+    </div>
+
+    <br><br><br><br>
+
+    <div id="last-container">
+        <form>
+            <center>
+                <h1 class="last-form-1">How May We Help You?</h1>
+            </center>
+
+            <br>
+
+            <p class="last-form-two-i"><b class="last-form-two-ii" >Have a question about the best SparkPost solution to meet your need?</b> No matter what your company size or sending volume, there's a SparkPost cloud email service to fit your needs. if you need assistance selecting the solution that is right for you, simply fill out this form and a SparkPost representative will be in touch soon, or call 877-887-3031.</p>
+
+            <br>
+            <center>
+                <div>
+                    <input class="last-form-input" type="text" placeholder="FIRST NAME"><br><br>
+
+                    <input class="last-form-input" type="text" placeholder="LAST NAME"><br><br>
+
+                    <input class="last-form-input" type="text" placeholder="EMAIL"><br><br>
+
+                    <input class="last-form-input" type="text" placeholder="COMPANY"><br><br>
+
+                    <input class="last-form-input" type="text" placeholder="PHONE"><br><br>
+                    
+                    <select input type="select" placeholder="JOB FUNCTION" style="width: 74%; border: solid 1px lightblue; background-color:  aliceblue; height: 20px; padding: 30px; font-size: 17px; font-weight: 300; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> 
+                        Job FUNCTION
+                        <option value="Job Function">Job Function</option> 
+                        <option value="saab">Saab</option> 
+                        <option value="mercedes">Mercedes</option> 
+                        <option value="audi">Audi</option> 
+                    </select><br><br>  
+
+
+                    <input class="last-form-input" type="select" placeholder="MONTHLY SENDING VOLUME""><br><br>
+
+                    <input class="last-form-input" type="select" name="comments" placeholder="COMMENTS">
+                </div>
+
+                <p class="last-form-input-container"><input type="button">KEEP ME UPDATED ON SPARKPOST</p><br><br>
+
+                <center>
+                    <a href="../_Tables_/collection's/IMG-20230916-WA0039.jpg" class="last_form_contact" input type="Contact us">CONTACT US</a><br><br><br>
+                </center>
+            </center>
+
+            <p style="color: rgb(185, 221, 245);">Current customer should visit the <a href="../code-class-2/index.html"><b style="color: aliceblue; text-decoration: none;"></b>Support</a> page with any question as this form does not reach our support department SparkPost Elite customer should contact their Technical Account Manager</p>
+        </form>
+    </div>
+</body>
+</html>
